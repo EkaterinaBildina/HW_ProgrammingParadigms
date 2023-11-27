@@ -49,3 +49,37 @@ public class Main
 	
 	
 }
+
+
+
+
+
+---------------------------------
+HW02
+
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please input number n for multiply:  ");
+        int n = scanner.nextInt();
+        
+        multiplyTableCalc(n);
+    }
+    
+    public static void multiplyTableCalc(int num) {
+        for(int i = 1; i < num + 1; i++){
+            for (int j = 1; j < num + 1; j++){
+                int count = i * j;
+               System.out.printf("%d * %d = %d \t", i,  j, count);
+            }
+    
+            System.out.println();
+        }
+        
+    }
+    
+}
