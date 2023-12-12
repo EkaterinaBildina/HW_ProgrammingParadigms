@@ -145,3 +145,15 @@ class Main {
     }
         
     }
+
+
+    -----------------------------------------
+    HW05 Prolog
+
+    % Rules
+sum_result([],0).
+sum_result([Head | Tail], Sum):-
+     sum_list(Tail, Tail_Sum), Sum is Head + Tail_Sum.
+
+%Query
+?- sum_result([1,2,3,4,5,6,7,8,9,10], Result), write("Result is"  :  Result).
